@@ -56,7 +56,12 @@
        @keyframes typing {
            from { width: 0 }
            to { width: 100% }
+          
        }
+      @keyframes blink-caret {
+           from, to { border-color: transparent }
+           50% { border-color: #3b82f6; }
+      }
        .reveal {
            opacity: 0;
            transform: translateY(30px);
