@@ -51,7 +51,7 @@
            overflow: hidden;
            white-space: nowrap;
            border-right: .15em solid #3b82f6;
-           animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+           animation: typing 3.0s steps(27, end), blink-caret .75s step-end infinite;
        }
        @keyframes typing {
            from { width: 0 }
@@ -72,6 +72,74 @@
            opacity: 1;
            transform: translateY(0);
        }
+      font-family: 'Inter', sans-serif;
+        }
+
+        /* --- CHANGE START: Yeh Pura Animation CSS Login Page se Liya Gaya Hai --- */
+        @keyframes float {
+            0% {
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-40px) translateX(30px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0px) translateX(0px) rotate(360deg);
+            }
+        }
+
+        @keyframes float-reverse {
+            0% {
+                transform: translateY(0px) translateX(0px);
+            }
+            50% {
+                transform: translateY(30px) translateX(-40px);
+            }
+            100% {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+
+        .shape1 {
+            animation: float 35s ease-in-out infinite;
+        }
+
+        .shape2 {
+            animation: float-reverse 40s ease-in-out infinite;
+            animation-delay: -5s;
+        }
+
+        .shape3 {
+            animation: float 45s ease-in-out infinite;
+            animation-delay: -10s;
+        }
+        
+        .shape4 {
+            animation: float-reverse 30s ease-in-out infinite;
+            animation-delay: -15s;
+        }
+         .shape5 {
+            animation: float 50s ease-in-out infinite;
+            animation-delay: -8s;
+        }
+        /* --- CHANGE END: Animation CSS Yahan Khatam Hota Hai --- */
+
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- --- CHANGE START: Yeh Animated Background ka HTML Hai (Login Page se Liya Gaya Hai) --- -->
+    <div class="absolute inset-0 -z-10 h-full w-full overflow-hidden">
+         <div class="absolute inset-0 bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+        <div class="relative h-full w-full">
+            <div class="shape1 absolute -top-20 -left-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
+            <div class="shape2 absolute -top-20 -right-24 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
+            <div class="shape3 absolute -bottom-24 left-1/4 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
+            <div class="shape4 absolute -bottom-20 -right-20 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+            <div class="shape5 absolute top-1/2 left-1/2 w-60 h-60 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-50 -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+    </div>
+    <!-- --- CHANGE END: Animated Background ka HTML Yahan Khatam Hota Hai --- -->
    </style>
 </head>
 <body class="antialiased">
